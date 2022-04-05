@@ -1,0 +1,42 @@
+*
+{
+    margin: 0;
+    padding: 00;
+    font-family: serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.loading > span
+{
+    display: inline-block;
+    color: white;
+    font-size: 4em;
+    animation: wave 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--a));
+}
+
+
+@keyframes wave{
+    0%
+    { 
+        transform: translateY(0px);
+    }
+
+    30%
+    {
+        transform: translateY(-40px);
+    }
+
+    60%
+    {
+        transform: translateY(0px);
+    }    
+}
